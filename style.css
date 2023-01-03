@@ -172,6 +172,11 @@ select {
     vertical-align: middle;
 }
 
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
 li {
     list-style: none;
 }
@@ -189,10 +194,10 @@ a {
 }
 
 .logo {
-    font-family: sans-serif;
     color: white;
     margin: 0px 30px;
 }
+
 .header-container ul {
     display: flex;
     margin: 0px 30px;
@@ -200,47 +205,121 @@ a {
 
 .header-container ul li {
     color: white;
-    font-family: sans-serif;
     margin: 0px 20px;
 }
 
 .content-container {
     background-color: #1F2937;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: fit-content;
+    flex: 1 0 auto;
 }
+
 .center-container {
-    border: 2px solid blue;
+    padding: 100px 100px;
+    height: 100vh;
     display: flex;
     margin: auto 0;
-    padding: 0px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .central-column-container {
     flex: 1;
     color: white;
-    border: 2px solid black;
+}
+
+
+.main-text {
+    margin: 10px;
+    font-size: 48px;
+}
+
+.secondary-text {
+    font-size: 18px;
+    margin: 10px;
+
 }
 
 .signup {
+    color: white;
+    border: none;
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    border-radius: 0.3rem;
     background-color: #3882F6;
 }
 
 .center-container img {
+    display: flex;
     flex: 1;
-    border: 2px solid white;
-    height: 130px;
-    width: 250px;
+    max-width: 450px;
+    height: 200px;
+}
+.add-info {
+    padding: 20px;
+    text-align: center;
+}
+.info-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
 }
 
-@media screen and (max-width: 600px){
-    .center-container{
-        display: block;
-    } 
-    .center-container img {
-        margin: auto;
-    }
+.box-container {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    max-width: 250px;
+    margin: 5px;
+}
+
+.box {
+    border: 3px solid blue;
+    border-radius: 0.5rem;
+    height: 100px;
+    width: 100px;
+}
+
+.qoute-container {
+    padding: 100px 100px;
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.call-container {
+    border-radius: 0.2rem;
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    background-color: #1F2937;
+}
+.call-text-container {
+    margin: 15px;
+}
+
+.call-text-container p {
+    margin: 8px;
+}
+
+.call-container button {
+    border-radius: 0.2rem;
+    color: white;
+    background-color: #1F2937;
+}
+
+.footer-section {
+    color: white;
+    background-color: #1F2937;
+    text-align: center;
+    padding: 10px;
 }
